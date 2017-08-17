@@ -10,13 +10,13 @@ url: "http://www.resurgens.io/" # the base hostname & protocol for your site, e.
 
 # Banner settings
 video: mountains.mp4 # add banner video. Add your video file to the folder video
-banner-title: # add banner title
-banner-desc: # add banner description
+banner-title: Web Developer # add banner title
+banner-desc: Self-taught, bootcamp trained, CS minor specializing in Elixir w/ Phoenix, Rails, React, and AngularJS. # add banner description
 
 # Author settings
 author-pic: face.png # your photo
 author-name: Dave Lively
-about-author: Dave is a self-taught web developer based in Atlanta. Graduate of West Point, husband to Sarah, and avid Atlanta United supporter.
+about-author: Dave is a self-taught web developer based in Atlanta, seeking to turn my passion into a career. Graduate of West Point, husband to Sarah, and avid Atlanta United supporter.
 email: dlively@resurgens.io # your email
 phone: (704) 759-6241 # your pnone number
 website: http://www.resurgens.io/ # you website
