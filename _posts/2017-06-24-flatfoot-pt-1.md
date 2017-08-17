@@ -7,8 +7,9 @@ description: Using JavaScript to inter. # Add post description (optional)
 tag: [Capstone, Blogging, Elixir, Phoenix, Phoenix 1.3, JSON, Websocket]
 ---
 
-![](https://github.com/favicon.ico) &nbsp;&nbsp;[View on GitHub](https://github.com/davelively14/flatfoot) <br>
-<img src="https://image.flaticon.com/icons/png/128/12/12195.png" width="32"> &nbsp;&nbsp;[View Demo](https://obscure-reef-78695.herokuapp.com/)
+![](https://github.com/favicon.ico) &nbsp;&nbsp;<a href="https://github.com/davelively14/flatfoot" target="\_blank">View on GitHub</a>
+<br>
+<img src="https://image.flaticon.com/icons/png/128/12/12195.png" width="32"> &nbsp;&nbsp;<a href="https://obscure-reef-78695.herokuapp.com/" target="\_blank">View Demo</a>
 
 ## Notes on this entry
 
