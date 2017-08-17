@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Flatfoot, pt 2 - Phoenix 1.3"
-img: flatfoot-1.png # Add image post (optional)
+img: flatfoot-2.png # Add image post (optional)
 date: 2017-08-13 00:00:00 +0500
-description: Using Phoenix 1.3. # Add post description (optional)
+description: Using Phoenix 1.3 to build an API. # Add post description (optional)
 tag: [Capstone, Blogging, Elixir, Phoenix, Phoenix 1.3, JSON, Websocket]
 ---
 # Flatfoot
@@ -55,7 +55,7 @@ I settled on the name Flatfoot for the app. I realize that's more a beat cop tha
 
 We can see a basic outline of the architecture quite clearly in the new directory structure. Each system has it's own directory within `/lib/flatfoot`. Also worth noting, the old `/web` directory - once a clinger to the root in early versions of Phoenix - now finds a more appropriate home and a new name: `/lib/flatfoot_web`.
 
-<img src="../assets/img/capstone/dir_tree_overview_1_3_0.png" alt="Figure 1" style="width: 100%">
+<img src="../assets/img/flatfoot-pt-1/dir_tree_overview_1_3_0.png" alt="Figure 1" style="width: 100%">
 <small>**Figure 1.** *Flatfoot directory tree in Phoenix 1.3*</small>
 
 If you’re used to running a third party bundler like [webpack](https://webpack.github.io/) with earlier versions of Phoenix and earlier, you’re also likely to notice how uncluttered the root directory is. Our `package.json`, `webpack.config.js`, and the `node_module` directory are now all packed away quite neatly within `/assets`.
@@ -64,12 +64,12 @@ We're left with a clean, easy to reference directory tree, with clearly defined 
 
 ### System design
 
-<img src="../assets/img/capstone/web_system_1_3_0.png" alt="Figure 2" style="width: 100%">
+<img src="../assets/img/flatfoot-pt-1/web_system_1_3_0.png" alt="Figure 2" style="width: 100%">
 <small>**Figure 2.** *Flatfoot systems overview.*</small>
 
 In this app's most basic form, all user interaction is managed by the `Web` system. It's responsible for handling requests from the user, requesting and persisting data via interaction with the other systems, and returning gathered data to the user. The `Clients` and `Spade` systems expose their interface to the `Web` system via their context modules. The `Clients` system handles all requests relating to the management of users and their preferences, such as creating a profile, editing that profile, and authorizing access via session tokens. The `Spade` system is where the significant action begins.
 
-<img src="../assets/img/capstone/data_flow.png" alt="Figure 3" style="width: 100%">
+<img src="../assets/img/flatfoot-pt-1/data_flow.png" alt="Figure 3" style="width: 100%">
 <small>**Figure 3.** *Data flow when requesting new results.*</small>
 
 Via websocket transport monitored by `SpadeChannel`, users may request retrieval or deletion of persisted results or request new results altogether. Figure 3 depicts what happens when a user requests new results.
@@ -83,7 +83,7 @@ Via websocket transport monitored by `SpadeChannel`, users may request retrieval
 
 As Mikel Myskala has [pointed out](http://michal.muskala.eu/2017/05/16/putting-contexts-in-context.html), the biggest mind shift here is understanding that we're only minimally coupling our data to our application. One of the more challenging aspects was developing optimal boundaries for my application - and I'm still pretty sure I could further improve things.
 
-<img src="../assets/img/capstone/boundaries.png" alt="Figure 3" style="width: 100%">
+<img src="../assets/img/flatfoot-pt-1/boundaries.png" alt="Figure 3" style="width: 100%">
 <small>**Figure 4.** *Flatfoot's boundaries*</small>
 
 Unlike previous versions of Phoenix, accessing the underlying schema and modules should only be accomplished by calling functions within the context module - so no more `Repo` calls from controllers. Within these contexts you'll find common, RESTful functions like `Clients.create_user(attrs)` or `Clients.get_user!(123)`. But you can quickly create more dynamic and useful functions like `Clients.get_user_by_token(token)`, which returns a `User` when provided a valid session token. The `Flatfoot.Clients` context functions as the boundary and it's the only place you should expose the underlying system to the rest of the app.
@@ -156,19 +156,19 @@ end
 
 There are often times when different systems need access to the same table in the database. In Flatfoot, the `Archer`, `Spade`, and `SpadeInspector` systems all require access to data from the `archer_backends` table. In earlier version of Phoenix, everyone would just refer to the same `Archer.Backends` model, thereby adding yet another coupling between different systems. In Phoenix 1.3, however, we simply create customized schemas for each system.
 
-<img src="../assets/img/capstone/boundaries_backend_focus.png" alt="Figure 3" style="width: 100%">
+<img src="../assets/img/flatfoot-pt-1/boundaries_backend_focus.png" alt="Figure 3" style="width: 100%">
 <small>**Figure 5.** *Each system needing access to the `archer_backends` table has their own schema.*</small>
 
 While each of the three `Backend` modules in Figure 5 are schemas that represent data from the same table (`archer_backends`), they only pull fields and associations according to the needs of the system (see Figure 6 below). The `SpadeInspector` system only needs the module name for each backend in order to build the right configuration, while the `Spade` system only needs a few fields available in case users need that data to select a backend for a particular account. We are able to deliberately encapsulate our schemas and associations within each system and minimize coupling.
 
-<img src="../assets/img/capstone/backend_systems.png" alt="Figure 3" style="width: 100%">
+<img src="../assets/img/flatfoot-pt-1/backend_systems.png" alt="Figure 3" style="width: 100%">
 <small>**Figure 6.** *Backends for each system.*</small>
 
 ### Special considerations - associations in disparate systems
 
 For my app, I had one situation where I needed to associate across boundaries in order to properly handle deleting a `User`. Similar to the situation above, both the `Clients` system and `Spade` system make reference to the `users` table and they both specify different `has_many` associations for their unique `User` schemas:
 
-<img src="../assets/img/capstone/user_problems.png" alt="Figure 3" style="width: 100%">
+<img src="../assets/img/flatfoot-pt-1/user_problems.png" alt="Figure 3" style="width: 100%">
 <small>**Figure 7.** *Same table, different associations*</small>
 
 This all works perfectly well until someone needs to delete their account. The `Clients` context needs to offer account deletion functionality, so we create a simple function within that context:
