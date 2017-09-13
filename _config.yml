@@ -9,7 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.resurgens.io/" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Banner settings
-video: mountains.mp4 # add banner video. Add your video file to the folder video
+video: Mobile-Games.mp4 # add banner video. Add your video file to the folder video
 banner-title: Web Developer # add banner title
 banner-desc: Self-taught, bootcamp trained, CS minor specializing in Elixir w/ Phoenix, Rails, React, and AngularJS. # add banner description
 
