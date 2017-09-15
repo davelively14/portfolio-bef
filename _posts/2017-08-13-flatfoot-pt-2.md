@@ -249,6 +249,6 @@ Note that we return a `Clients.User` structure instead of the `Shared.User` that
 
 ## Conclusion
 
-Phoenix 1.3 is a significant departure, not only from earlier iterations of framework, but also from the MVC architectures that have dominated web frameworks. One can't help but feel that Phoenix is coming into it's own, escaping the dominating shadow of the popular frameworks before it, and offering something new, something more in line with modern web design. Phoenix 1.3 feels more like a natural extension of an Elixir umbrella app or collection of microservices than it does a monolithic MVC app like Rails.
+Phoenix 1.3 is a significant departure, not only from earlier iterations of framework, but also from the MVC architectures that have dominated web development recently. One can't help but feel that Phoenix is coming into it's own, escaping the dominating shadow of the popular frameworks before it, and offering something new, something more in line with evolving, modern web design. Additionally, Phoenix 1.3 feels more like a natural extension of an Elixir umbrella app or collection of microservices than it does a monolithic MVC app like Rails.
 
 It takes some getting used to, but the future is bright.
