@@ -48,9 +48,9 @@ At its core, Phoenix 1.3 provides a forcing mechanism to design with intent. You
 
 <img src="http://www.filminamerica.com/Movies/TheMalteseFalcon/falcon06.jpg" alt="Maltese Falcon, 1941" style="display: block; margin: 0 auto">
 
-A quick note on the nomenclature I chose. In keeping with the Phoenix mythical bird theme, I named my systems after characters from the classic 1941 film, [The Maltese Falcon](https://en.wikipedia.org/wiki/The_Maltese_Falcon_(1941_film)). The relevant part of the premise is rather simple: A prospective **Client** approaches Bogart's famous character, Sam **Spade**, with an interesting case. Spade takes the case and dispatches his partner, Miles **Archer**, to gather information on the case and report back, but ultimately it's up to Spade to solve the mystery. Fortunately, we made a few improvements on the movie, so if Archer just happens to die, he’ll be seamlessly revived and put back into action thanks to the magic of OTP.
+A quick note on the nomenclature for this project. In keeping with the Phoenix mythical bird theme, these systems are named after characters from the classic 1941 film, [The Maltese Falcon](https://en.wikipedia.org/wiki/The_Maltese_Falcon_(1941_film)). The relevant part of the movie's premise is rather simple: A prospective **Client** approaches Bogart's famous character, Sam **Spade**, with an interesting case. Spade takes the case and dispatches his partner, Miles **Archer**, to gather information on the case and report back, but ultimately it's up to Spade to solve the mystery. Fortunately, we made a few improvements on the movie, so if Archer would happen to die under mysterious circumstances, he’ll be seamlessly revived and put back into action thanks to the magic of OTP.
 
-I settled on the name Flatfoot for the app. I realize that's more a beat cop than a private investigator like Spade, but the prevailing slang for a PI at the time doesn't seem appropriate in a modern context.
+I settled on the name Flatfoot for the app. I realize that's more a beat cop than a private investigator like Spade, but 1940's era slang for a PI doesn't seem appropriate in a modern context.
 
 ### Organizing in Phoenix 1.3
 
