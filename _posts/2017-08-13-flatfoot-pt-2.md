@@ -59,7 +59,7 @@ We can see a basic outline of the architecture quite clearly in the new director
 <img src="../assets/img/flatfoot-pt-1/dir_tree_overview_1_3_0.png" alt="Figure 1" style="width: 100%">
 <small>**Figure 1.** *Flatfoot directory tree in Phoenix 1.3*</small>
 
-If you’re used to running a third party bundler like [webpack](https://webpack.github.io/) with earlier versions of Phoenix and earlier, you’re also likely to notice how uncluttered the root directory is. Our `package.json`, `webpack.config.js`, and the `node_module` directory are now all packed away quite neatly within `/assets`.
+If you’re used to running a third party bundler like [webpack](https://webpack.github.io/) with earlier versions of Phoenix, you’re also likely to notice how uncluttered the root directory is. Our `package.json`, `webpack.config.js`, `.babelrc`, testing configs, and the `node_module` directory are now all packed away quite neatly within `/assets`.
 
 We're left with a clean, easy to reference directory tree, with clearly defined boundaries for our systems.
 
