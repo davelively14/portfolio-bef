@@ -68,7 +68,7 @@ We're left with a clean, easy to reference directory tree, with clearly defined 
 <img src="../assets/img/flatfoot-pt-1/web_system_1_3_0.png" alt="Figure 2" style="width: 100%">
 <small>**Figure 2.** *Flatfoot systems overview.*</small>
 
-In this app's most basic form, all user interaction is managed by the `Web` system. It's responsible for handling requests from the user, requesting and persisting data via interaction with the other systems, and returning gathered data to the user. The `Clients` and `Spade` systems expose their interface to the `Web` system via their context modules. The `Clients` system handles all requests relating to the management of users and their preferences, such as creating a profile, editing that profile, and authorizing access via session tokens. The `Spade` system is where the significant action begins.
+In this app's most basic form, all user interaction is managed by the `FlatfootWeb` system. It's responsible for handling requests from the user, requesting and persisting data via interaction with the other systems, and returning gathered data to the user. The `Clients` and `Spade` systems expose their interface to the `Web` system via their context modules. The `Clients` system handles all requests relating to the management of users and their preferences, such as creating a profile, editing that profile, and authorizing access via session tokens. The `Spade` system is where the significant action begins.
 
 <img src="../assets/img/flatfoot-pt-1/data_flow.png" alt="Figure 3" style="width: 100%">
 <small>**Figure 3.** *Data flow when requesting new results.*</small>
@@ -187,7 +187,7 @@ When we run our tests, however, we get an error:
      test/clients/clients_test.exs:95
      ** (Ecto.ConstraintError) constraint error when attempting to delete struct:
      
-         * foreign_key: spade_wards_user_id_fkey
+         * foreign_key: wards_user_id_fkey
      
      "If you would like to convert this constraint into an error, please
      call foreign_key_constraint/3 in your changeset and define the proper
