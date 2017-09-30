@@ -194,9 +194,9 @@ When we run our tests, however, we get an error:
      constraint name. The changeset has not defined any constraint."
 ```
 <br>
-Our `User` is still be referenced by elements of another table, so Ecto will throw that `ConstraintError`. Our problem, though, is that our `User` schema in `Clients` does not declare the `has_many` ratio with `spade_wards` table.
+Our `User` is still be referenced by elements of another table, so Ecto will throw that `ConstraintError`. Our problem, though, is that our `User` schema in `Clients` does not declare the `has_many` ratio with `wards` table.
 
-We could simply add the `has_many :spade_wards` with a `on_delete: delete_all` option, which is what the [Phoenix 1.3 guides suggest](https://hexdocs.pm/phoenix/1.3.0-rc.3/contexts.html#adding-a-cms-context-with-cross-context-dependencies). But that can quickly become troublesome if we have multiple contexts that need access to all `User` associations. If you have to add all associations for every `User` use, it would be difficult to maintain. One solution to limiting that coupling is to create a new shared system:
+We could simply add the `has_many :wards` with a `on_delete: delete_all` option, which is what the [Phoenix 1.3 guides suggest](https://hexdocs.pm/phoenix/1.3.0-rc.3/contexts.html#adding-a-cms-context-with-cross-context-dependencies). But that can quickly become troublesome if we have multiple contexts that need access to all `User` associations. If you have to add all associations for every `User` use, it would be difficult to maintain. One solution to limiting that coupling is to create a new shared system:
 
 <pre>
 |-- shared
