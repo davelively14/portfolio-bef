@@ -160,7 +160,7 @@ There are often times when different systems need access to the same table in th
 <img src="../assets/img/flatfoot-pt-1/boundaries_backend_focus.png" alt="Figure 3" style="width: 100%">
 <small>**Figure 5.** *Each system needing access to the `archer_backends` table has their own schema.*</small>
 
-While each of the three `Backend` modules in Figure 5 are schemas that represent data from the same table (`archer_backends`), they only pull fields and associations according to the needs of the system (see Figure 6 below). The `SpadeInspector` system only needs the module name for each backend in order to build the right configuration, while the `Spade` system only needs a few fields available in case users need that data to select a backend for a particular account. We are able to deliberately encapsulate our schemas and associations within each system and minimize coupling.
+While each of the three `Backend` modules in Figure 5 are schemas that represent data from the same table (`backends`), they only pull fields and associations according to the needs of the system (see Figure 6 below). The `SpadeInspector` system only needs the module name for each backend in order to build the right configuration, while the `Spade` system only needs a few fields available in case users need that data to select a backend for a particular account. We are able to deliberately encapsulate our schemas and associations within each system and minimize coupling.
 
 <img src="../assets/img/flatfoot-pt-1/backend_systems.png" alt="Figure 3" style="width: 100%">
 <small>**Figure 6.** *Backends for each system.*</small>
