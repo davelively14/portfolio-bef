@@ -160,7 +160,7 @@ There are often times when different systems need access to the same table in th
 <img src="../assets/img/flatfoot-pt-1/boundaries_backend_focus.png" alt="Figure 3" style="width: 100%">
 <small>**Figure 5.** *Each system needing access to the `backends` table has their own schema.*</small>
 
-While each of the three `Backend` modules in Figure 5 are schemas that represent data from the same table (`backends`), they only pull fields and associations according to the needs of the system (see Figure 6 below). The `SpadeInspector` system only needs the module name for each backend in order to build the right configuration, while the `Spade` system only needs a few fields available in case users need that data to select a backend for a particular account. We are able to deliberately encapsulate our schemas and associations within each system and minimize coupling.
+While each of the three `Backend` modules in Figure 5 are schemas that represent data from the same table, they only pull fields and associations according to the needs of the system (see Figure 6 below). The `SpadeInspector` system only needs the module name for each backend in order to build the right configuration, while the `Spade` system only needs a few fields available in case users need that data to select a backend for a particular account. We are able to deliberately encapsulate our schemas and associations within each system and minimize coupling.
 
 <img src="../assets/img/flatfoot-pt-1/backend_systems.png" alt="Figure 3" style="width: 100%">
 <small>**Figure 6.** *Backends for each system.*</small>
@@ -196,7 +196,9 @@ When we run our tests, however, we get an error:
 <br>
 Our `User` is still be referenced by elements of another table, so Ecto will throw that `ConstraintError`. Our problem, though, is that our `User` schema in `Clients` does not declare the `has_many` ratio with `wards` table.
 
-We could simply add the `has_many :wards` with a `on_delete: delete_all` option, which is what the [Phoenix 1.3 guides suggest](https://hexdocs.pm/phoenix/1.3.0-rc.3/contexts.html#adding-a-cms-context-with-cross-context-dependencies). But that can quickly become troublesome if we have multiple contexts that need access to all `User` associations. If you have to add all associations for every `User` use, it would be difficult to maintain. One solution to limiting that coupling is to create a new shared system:
+We could simply add the `has_many :wards` and `has_many :watchlists` with a `on_delete: delete_all` option, which is what the [Phoenix 1.3 guides suggest](https://hexdocs.pm/phoenix/1.3.0/contexts.html#cross-context-dependencies). But since those guides weren't available in the RC version of 1.3.0, and I was rather obsessed with decoupling, I opted to create one central schema that contained all the associations.
+
+I wouldn't recommend doing this (follow the guides above), but I leave it here to show an alternate method: create a new shared system:
 
 <pre>
 |-- shared
