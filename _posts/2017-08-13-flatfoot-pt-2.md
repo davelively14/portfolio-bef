@@ -155,10 +155,10 @@ end
 
 ## Same schema, different system
 
-There are often times when different systems need access to the same table in the database. In Flatfoot, the `Archer`, `Spade`, and `SpadeInspector` systems all require access to data from the `archer_backends` table. In earlier version of Phoenix, everyone would just refer to the same `Archer.Backends` model, thereby adding yet another coupling between different systems. In Phoenix 1.3, however, we simply create customized schemas for each system.
+There are often times when different systems need access to the same table in the database. In Flatfoot, the `Archer`, `Spade`, and `SpadeInspector` systems all require access to data from the `backends` table. In earlier version of Phoenix, everyone would just refer to the same `Archer.Backends` model, thereby adding yet another coupling between different systems. In Phoenix 1.3, however, we simply create customized schemas for each system.
 
 <img src="../assets/img/flatfoot-pt-1/boundaries_backend_focus.png" alt="Figure 3" style="width: 100%">
-<small>**Figure 5.** *Each system needing access to the `archer_backends` table has their own schema.*</small>
+<small>**Figure 5.** *Each system needing access to the `backends` table has their own schema.*</small>
 
 While each of the three `Backend` modules in Figure 5 are schemas that represent data from the same table (`backends`), they only pull fields and associations according to the needs of the system (see Figure 6 below). The `SpadeInspector` system only needs the module name for each backend in order to build the right configuration, while the `Spade` system only needs a few fields available in case users need that data to select a backend for a particular account. We are able to deliberately encapsulate our schemas and associations within each system and minimize coupling.
 
