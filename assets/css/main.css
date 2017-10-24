@@ -3992,7 +3992,7 @@ cite {
   padding: 2rem 0;
 }
 
-.chapters .chapter {
+.chapters .chapter, .section_title {
   position: relative;
   float: left;
   width: 32.333%;
@@ -4027,7 +4027,7 @@ cite {
   bottom: 10%;
 }
 
-.chapters .chapter_inner .chapter_number, .chapters .chapter_inner .chapter_title {
+.chapters .chapter_inner .chapter_number, .chapters .chapter_inner .chapter_title, .section_title {
   color: #ffffff;
 }
 
@@ -4045,10 +4045,14 @@ cite {
   border-top: 3px solid #c25b6c;
 }
 
-.chapters .chapter_inner .chapter_title {
+.chapters .chapter_inner .chapter_title, .section_title {
   font-size: 1.75rem;
   font-weight: 400;
   margin: 0 0 0.5rem 0;
+}
+
+.section_title {
+
 }
 
 .newsletter {
@@ -4762,7 +4766,7 @@ cite {
     font-size: 0.7rem;
     margin: 0 0 0.5rem 0;
   }
-  .chapters .chapter_inner .chapter_title {
+  .chapters .chapter_inner .chapter_title, .section_title {
     font-size: 1.35rem;
     margin: 0 0 0.3rem 0;
   }
