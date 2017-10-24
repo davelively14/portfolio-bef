@@ -35,6 +35,12 @@ mailchimp: # add your MailChimp form identifier. For example - blogenjoyfreedom.
 # Tracker
 analytics:
 
+# Add portfolio collection
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
 # Paginate
 paginate: 10
 paginate_path: /page:num/

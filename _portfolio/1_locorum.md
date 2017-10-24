@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: portfolio
 title: "Locorum"
 img: locorum.png # Add image post (optional)
 date: 2017-05-12 00:00:00 +0500

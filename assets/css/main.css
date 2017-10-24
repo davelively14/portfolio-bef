@@ -4004,11 +4004,23 @@ cite {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.chapters .chapter a {
+.projects .project {
+  position: relative;
+  float: left;
+  width: 24%;
+  margin: 0 0.5% 1% 0.5%;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.chapters .chapter a, .projects .project a {
   text-decoration: none;
 }
 
-.chapters .chapter img {
+.chapters .chapter img, .projects .project img {
   width: 100%;
   vertical-align: middle;
   -webkit-transition: all 0.4s;
@@ -4027,7 +4039,13 @@ cite {
   bottom: 10%;
 }
 
-.chapters .chapter_inner .chapter_number, .chapters .chapter_inner .chapter_title, .section_title {
+.project_inner {
+  position: absolute;
+  left: 2.5%;
+  top: 2.5%;
+}
+
+.chapters .chapter_inner .chapter_number, .chapters .chapter_inner .chapter_title, .section_title, .project_title, .project_text {
   color: #ffffff;
 }
 
@@ -4037,7 +4055,7 @@ cite {
   margin: 0 0 1rem 0;
 }
 
-.chapters .chapter_inner .chapter_number::after {
+.chapters .chapter_inner .chapter_number::after, .project_title::after {
   content: "";
   display: block;
   width: 40px;
@@ -4045,10 +4063,14 @@ cite {
   border-top: 3px solid #c25b6c;
 }
 
-.chapters .chapter_inner .chapter_title {
+.chapters .chapter_inner .chapter_title, .project_title {
   font-size: 1.75rem;
   font-weight: 400;
   margin: 0 0 0.5rem 0;
+}
+
+.project_text {
+  font-size: 1rem;
 }
 
 .section_title {
@@ -4743,11 +4765,17 @@ cite {
 }
 
 @media only screen and (max-width: 960px) {
-  .chapters {
+  .chapters, .projects {
     padding: 2rem 0;
   }
+
   .chapters .chapter {
     width: 49%;
+    margin: 0 0.5% 1% 0.5%;
+  }
+
+  .projects .project {
+    width: 32.333%;
     margin: 0 0.5% 1% 0.5%;
   }
 
@@ -4850,6 +4878,10 @@ cite {
   }
   .chapters .chapter {
     width: 99%;
+    margin: 0 0.5% 2% 0.5%;
+  }
+  .projects .project {
+    width: 49%;
     margin: 0 0.5% 2% 0.5%;
   }
   .copyright p {

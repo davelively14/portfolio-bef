@@ -2,17 +2,42 @@
 layout: main
 ---
 
-<h3 class="section_title">Blogs</h3>
-{% for post in paginator.posts %}
-  <div class="chapter">
-    <a href="{{post.url | prepend: site.baseurl}}">
-      {% if post.img %}
-      <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
-      {% endif %}
-    </a>
-    <div class="chapter_inner">
-      <p class="chapter_number">{{post.date | date: '%b %d, %Y'}}</p>
-      <h3 class="chapter_title">{{post.title}}</h3>
+<section class="chapters cf">
+    <div class="wrapper">
+      <h3 class="section_title">Blogs</h3>
+
+      {% for post in paginator.posts %}
+      <div class="chapter">
+        <a href="{{post.url | prepend: site.baseurl}}">
+          {% if post.img %}
+          <img src={{ "/assets/img/" | prepend: site.baseurl | append: post.img }} alt="{{post.title}}">
+          {% endif %}
+          <div class="chapter_inner">
+            <p class="chapter_number">{{post.date | date: '%b %d, %Y'}}</p>
+            <h3 class="chapter_title">{{post.title}}</h3>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
     </div>
+</section>
+
+<section class="projects cf">
+  <div class="wrapper">
+    <h3 class="section_title">Portfolio</h3>
+    
+    {% for project in site.portfolio %}
+    <div class="project">
+      <a href="{{project.url | prepend: site.baseurl}}">
+        {% if project.img %}
+        <img src={{ "/assets/img/" | prepend: site.baseurl | append: project.img }} alt="{{project.title}}">
+        {% endif %}
+        <div class="project_inner">
+          <h3 class="project_title">{{project.title}}</h3>
+          <p class="project_text">{{project.description}}</p>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
   </div>
-{% endfor %}
+</section>
