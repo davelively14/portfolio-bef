@@ -4045,7 +4045,7 @@ cite {
   border-top: 3px solid #c25b6c;
 }
 
-.chapters .chapter_inner .chapter_title, .section_title {
+.chapters .chapter_inner .chapter_title {
   font-size: 1.75rem;
   font-weight: 400;
   margin: 0 0 0.5rem 0;
@@ -4053,6 +4053,9 @@ cite {
 
 .section_title {
   margin-left: 5%;
+  font-size: 3.0rem;
+  font-weight: 400;
+  margin: 0 0 0.5rem 0;
 }
 
 .newsletter {
@@ -4766,10 +4769,16 @@ cite {
     font-size: 0.7rem;
     margin: 0 0 0.5rem 0;
   }
-  .chapters .chapter_inner .chapter_title, .section_title {
+  .chapters .chapter_inner .chapter_title {
     font-size: 1.35rem;
     margin: 0 0 0.3rem 0;
   }
+
+  .section_title {
+    font-size: 1.85rem;
+    margin: 0 0 0.4rem 0;
+  }
+
   .pagination {
     padding: 2rem 0 6rem;
   }
