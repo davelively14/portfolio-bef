@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: "Locorum"
-img: locorum.png # Add image post (optional)
+img: portfolio/locorum/locorum-cover.png # Add image post (optional)
 date: 2017-05-12 00:00:00 +0500
 description: An SEO tool to check accuracy of local listings for a given company. # Add post description (optional)
 tag: [Elixir, Phoenix, JavaScript, SEO]
