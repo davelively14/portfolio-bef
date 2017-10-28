@@ -7,6 +7,7 @@ date: 2017-03-15 00:00:00 +0500
 description: An analytics service to track events on websites # Add post description (optional)
 tag: [Rails, Ruby, Analytics, Tracking]
 icons: [icon-ruby-on-rails, icon-postgres]
+weight: 3
 ---
 
 ![](https://github.com/favicon.ico) &nbsp;&nbsp;<a href="https://github.com/davelively14/blocmetrics" target="\_blank">View on GitHub</a>
