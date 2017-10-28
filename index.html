@@ -25,7 +25,7 @@ layout: main
 <section class="projects cf">
   <div class="wrapper">
     <h3 class="section_title">Portfolio</h3>
-    
+
     {% for project in site.portfolio %}
     <div class="project">
       <a href="{{project.url | prepend: site.baseurl}}">
@@ -37,6 +37,11 @@ layout: main
           <p class="project_text">{{project.description}}</p>
         </div>
       </a>
+      <div class="icons-list">
+        {% for icon in project.icons %}
+          &nbsp;<i class="{{icon}} main-icon" style="font-size:2em; color: #ffffff"></i>&nbsp;
+        {% endfor %}
+      </div>
     </div>
     {% endfor %}
   </div>
