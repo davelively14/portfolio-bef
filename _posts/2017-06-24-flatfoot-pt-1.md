@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flatfoot, pt 1 - The API"
-img: flatfoot-1.png # Add image post (optional)
+img: flatfoot-pt-1/cover.png # Add image post (optional)
 date: 2017-06-24 00:00:00 +0500
 description: Using JavaScript to inter. # Add post description (optional)
 tag: [Capstone, Blogging, Elixir, Phoenix, Phoenix 1.3, JSON, Websocket]

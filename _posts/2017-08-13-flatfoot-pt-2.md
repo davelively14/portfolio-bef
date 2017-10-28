@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flatfoot, pt 2 - Phoenix 1.3"
-img: flatfoot-2.png # Add image post (optional)
+img: flatfoot-pt-2/cover.png # Add image post (optional)
 date: 2017-08-13 00:00:00 +0500
 description: Using Phoenix 1.3 to build an API. # Add post description (optional)
 tag: [Capstone, Blogging, Elixir, Phoenix, Phoenix 1.3, JSON, Websocket]
