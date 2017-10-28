@@ -24,6 +24,33 @@ Blocmetrics provides a way to track customized events on a website. A user will 
 <img src="{{site.baseurl}}/assets/img/portfolio/blocmetrics/blocmetrics-summary.png" alt="Figure 1" style="width: 100%">
 <small>**Figure 3.** *Summary for a registered application with events received from the website.*</small>
 
+On the user's website where tracking is to occur, the user can create a simple JavaScript function to build a report (note that the url below is for when the dev server is up and running):
+
+```javascript
+var blocmetrics = {};
+
+blocmetrics.report = function(eventName) {
+  var event = {event: { name: eventName }};
+
+  var request = new XMLHttpRequest();
+  request.open("POST", "http://localhost:3000/api/events", true);
+  request.setRequestHeader('Content-Type', 'application/json');
+  request.send(JSON.stringify(event));
+};
+```
+<br>
+To create and send reports, the user calls that function passing in the event to be tracked. For example:
+
+```html
+<!-- When a button is clicked: -->
+<a href="/about" onclick="blocmetrics.report('about link clicked')">About</a>
+```
+<br>
+```javascript
+// When the page loads
+<script>blocmetrics.report('about page loaded');</script>
+```
+<br>
 ## Tech Stack
 
 <a href="http://rubyonrails.org/" target="\_blank"><i class="icon-ruby-on-rails" style="font-size:4em;"></i></a> Rails is used for user management via static page frontend. It was also used as the API to handle received events from registered applications.
