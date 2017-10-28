@@ -6,6 +6,7 @@ page-img: portfolio/flatfoot/flatfoot-page-img.png # Image for landing page
 date: 2017-07-12 00:00:00 +0500
 description: Social media bullying detector. # Add post description (optional)
 tag: [Capstone, Elixir, Phoenix, Phoenix 1.3, JSON, Websocket]
+icons: [icon-reactjs, icon-elixir, icon-postgres]
 ---
 
 ![](https://github.com/favicon.ico) &nbsp;&nbsp;<a href="https://github.com/davelively14/flatfoot" target="\_blank">View on GitHub</a>

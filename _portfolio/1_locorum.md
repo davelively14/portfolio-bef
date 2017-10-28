@@ -6,6 +6,7 @@ page-img: portfolio/locorum/locorum-page-img.png # Image for landing page
 date: 2016-12-31 00:00:00 +0500
 description: SEO tool to check accuracy of local listings. # Add post description (optional)
 tag: [Elixir, Phoenix, JavaScript, SEO]
+icons: [icon-javascript, icon-elixir, icon-postgres]
 ---
 
 ![](https://github.com/favicon.ico) &nbsp;&nbsp;<a href="https://github.com/davelively14/locorum" target="\_blank">View on GitHub</a>
