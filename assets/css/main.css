@@ -4042,7 +4042,7 @@ cite {
 .project_inner {
   position: absolute;
   left: 2.5%;
-  bottom: -10%;
+  bottom: 10%;
 }
 
 .chapters .chapter_inner .chapter_number, .chapters .chapter_inner .chapter_title, .section_title, .project_title, .project_text {
@@ -4078,6 +4078,10 @@ cite {
   margin-bottom: 1rem;
   font-size: 3.0rem;
   font-weight: 400;
+}
+
+.icons-list {
+  text-align: center;
 }
 
 .newsletter {
@@ -4805,9 +4809,6 @@ cite {
     font-size: 1.35rem;
     margin: 0 0 0.3rem 0;
   }
-  .project_inner {
-    bottom: -20%;
-  }
   .project_title {
     font-size: 1.35rem;
   }
@@ -4905,9 +4906,6 @@ cite {
   }
   p {
     font-size: 1rem;
-  }
-  .project_inner {
-    bottom: -15%;
   }
 }
 
