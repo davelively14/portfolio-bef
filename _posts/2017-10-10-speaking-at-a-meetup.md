@@ -2,7 +2,7 @@
 layout: post
 title: "Presenting at a Meetup"
 img: meetup/cover.png # Add image post (optional)
-date: 2017-10-31 10:00:00 +0500
+date: 2017-11-25 10:00:00 +0500
 description: Overcoming the imposter inside. # Add post description (optional)
 tag: [Meetup, Public Speaking, Phoenix 1.3]
 ---
