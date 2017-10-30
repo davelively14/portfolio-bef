@@ -6,7 +6,7 @@ page-img: portfolio/locorum/locorum-page-img.png # Image for landing page
 date: 2016-12-31 00:00:00 +0500
 description: SEO tool to check accuracy of local listings. # Add post description (optional)
 tag: [Elixir, Phoenix, JavaScript, SEO]
-icons: [icon-javascript, icon-elixir, icon-postgres]
+icons: [icon-javascript, icon-elixir, icon-postgres, icon-bootstrap]
 weight: 2
 ---
 
@@ -22,6 +22,9 @@ Read more about this project in a [blog post]({{site.baseurl}}/locorum).
 
 ## Tech Stack
 
+<a href="http://getbootstrap.com/" target="\_blank"><i class="icon-bootstrap" style="font-size:4em;"></i></a> Bootstrap for our front-end components and styling.
+<br>
+<br>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="\_blank"><i class="icon-javascript" style="font-size:4em;"></i></a> Pure ES6 on the front end.
 <br>
 <br>

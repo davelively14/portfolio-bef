@@ -6,7 +6,7 @@ page-img: portfolio/flatfoot/flatfoot-page-img.png # Image for landing page
 date: 2017-07-12 00:00:00 +0500
 description: Social media bullying detector. # Add post description (optional)
 tag: [Capstone, Elixir, Phoenix, Phoenix 1.3, JSON, Websocket]
-icons: [icon-reactjs, icon-elixir, icon-postgres]
+icons: [icon-reactjs, icon-elixir, icon-postgres, icon-bootstrap]
 weight: 1
 ---
 
@@ -22,6 +22,9 @@ Read more about this project in a two-part blog post: [part 1]({{site.baseurl}}/
 
 ## Tech Stack
 
+<a href="http://getbootstrap.com/" target="\_blank"><i class="icon-bootstrap" style="font-size:4em;"></i></a> Bootstrap for our front-end components and styling.
+<br>
+<br>
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="\_blank"><i class="icon-reactjs" style="font-size:4em;"></i></a> React (with a [Redux](http://redux.js.org/) store) for the front end.
 <br>
 <br>
