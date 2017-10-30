@@ -6,7 +6,7 @@ page-img: portfolio/blocmetrics/blocmetrics-page-img.png # Image for landing pag
 date: 2017-03-15 00:00:00 +0500
 description: An analytics service to track events on websites # Add post description (optional)
 tag: [Rails, Ruby, Analytics, Tracking]
-icons: [icon-ruby-on-rails, icon-postgres]
+icons: [icon-ruby-on-rails, icon-postgres, icon-bootstrap]
 weight: 30
 ---
 
@@ -54,6 +54,9 @@ To create and send reports, the user calls that function passing in the event to
 <br>
 ## Tech Stack
 
+<a href="http://getbootstrap.com/" target="\_blank"><i class="icon-bootstrap" style="font-size:4em;"></i></a> Bootstrap for our front-end components and styling.
+<br>
+<br>
 <a href="http://rubyonrails.org/" target="\_blank"><i class="icon-ruby-on-rails" style="font-size:4em;"></i></a> Rails is used for user management via static page frontend. It was also used as the API to handle received events from registered applications.
 <br>
 <br>

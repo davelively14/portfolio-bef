@@ -6,7 +6,7 @@ page-img: portfolio/blocipedia/blocipedia-page-img.png # Image for landing page
 date: 2017-07-28 10:00:00 +0500
 description: User created markdown-based wikis. # Add post description (optional)
 tag: [Rails, Ruby, REST]
-icons: [icon-ruby-on-rails, icon-postgres]
+icons: [icon-ruby-on-rails, icon-postgres, icon-bootstrap]
 weight: 20
 ---
 
@@ -36,6 +36,9 @@ This application allows users to create public and private Markdown-based wikis 
 
 ## Tech Stack
 
+<a href="http://getbootstrap.com/" target="\_blank"><i class="icon-bootstrap" style="font-size:4em;"></i></a> Bootstrap for our front-end components and styling.
+<br>
+<br>
 <a href="http://rubyonrails.org/" target="\_blank"><i class="icon-ruby-on-rails" style="font-size:4em;"></i></a> Rails is used for user management via static page frontend. It was also used as the API to handle received events from registered applications.
 <br>
 <br>
