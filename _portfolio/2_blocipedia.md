@@ -7,7 +7,7 @@ date: 2017-07-28 10:00:00 +0500
 description: User created markdown-based wikis. # Add post description (optional)
 tag: [Rails, Ruby, REST]
 icons: [icon-ruby-on-rails, icon-postgres, icon-bootstrap]
-weight: 20
+weight: 21
 ---
 
 ![](https://github.com/favicon.ico) &nbsp;&nbsp;<a href="https://github.com/davelively14/blocipedia" target="\_blank">View on GitHub</a>
