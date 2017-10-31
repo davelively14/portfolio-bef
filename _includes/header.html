@@ -1,6 +1,12 @@
 
 <header class="main_header">
-  <a href="{{site.baseurl}}/" class="logo">{% if site.logo %}{{site.logo}}{% else %}B<span>ef</span>{% endif %}</a>
+  {% if page.url == "/" %}
+    <a class="logo">
+      <img src="{{site.baseurl}}/assets/img/resurgens_clean.png" alt="resurgens.io" width="75">
+    </a>
+  {% else %}
+    <a href="{{site.baseurl}}/" class="logo"><img src="{{site.baseurl}}/assets/img/resurgens_clean.png" alt="resurgens.io" width="75"></a>
+  {% endif %}
   <nav class="main_menu">
     <a href="{{site.baseurl}}/about/">About</a>
     <a href="{{site.baseurl}}/contact/">Contact</a>
