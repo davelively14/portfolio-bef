@@ -11,7 +11,7 @@ url: "http://www.resurgens.io/" # the base hostname & protocol for your site, e.
 # Banner settings
 video: Mobile-Games.mp4 # add banner video. Add your video file to the folder video
 banner-title: Web Developer # add banner title
-banner-desc: Self-taught, bootcamp trained, CS minor specializing in Elixir w/ Phoenix, Rails, React, and AngularJS. # add banner description
+banner-desc: Self-taught with a solid base of formal CS ed, now specializing in Elixir w/ Phoenix, Rails, React, and AngularJS. # add banner description
 
 # Author settings
 author-pic: face.png # your photo
