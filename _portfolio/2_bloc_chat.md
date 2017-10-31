@@ -4,7 +4,7 @@ title: "Bloc Chat"
 img: portfolio/bloc-chat/bloc-chat-cover.png # Image for homepage
 page-img: portfolio/bloc-chat/bloc-chat-page-img.png # Image for landing page
 date: 2017-01-30 10:00:00 +0500
-description: Realtime messaging with Firebase and AngularJS. # Add post description (optional)
+description: Chat messaging with Firebase and AngularJS. # Add post description (optional)
 tag: [AngularJS, Firebase]
 icons: [icon-angular, icon-fire-alt, icon-grunt]
 weight: 20
