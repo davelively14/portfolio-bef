@@ -7,7 +7,7 @@ date: 2017-03-05 10:00:00 +0500
 description: Digital music player # Add post description (optional)
 tag: [AngularJS, Firebase, Grunt]
 icons: [icon-angular, icon-grunt]
-weight: 32
+weight: 30
 ---
 
 ![](https://github.com/favicon.ico) &nbsp;&nbsp;<a href="https://github.com/davelively14/bloc-jams-angular" target="\_blank">View on GitHub</a>

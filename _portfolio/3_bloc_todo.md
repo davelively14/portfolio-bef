@@ -7,7 +7,7 @@ date: 2017-03-25 00:00:00 +0500
 description: API for a basic to-do list application # Add post description (optional)
 tag: [Rails, Ruby, JSON, API]
 icons: [icon-ruby-on-rails, icon-postgres]
-weight: 31
+weight: 32
 ---
 
 ![](https://github.com/favicon.ico) &nbsp;&nbsp;<a href="https://github.com/davelively14/bloc-todo/" target="\_blank">View on GitHub</a>
