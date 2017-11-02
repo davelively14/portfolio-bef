@@ -21,4 +21,4 @@ I designed this application for my wife's affiliate blogging website. It allowed
 <a href="http://php.net/" target="\_blank"><i class="icon-php-alt" style="font-size:4em;"></i></a> PHP for the plugin that interacts with the BandsInTown API.
 <br>
 <br>
-<a href="https://wordpress.org/" target="\_blank"><i class="icon-wordpress" style="font-size:4em;"></i></a> PostgreSQL for the database layer.
+<a href="https://wordpress.org/" target="\_blank"><i class="icon-wordpress" style="font-size:4em;"></i></a> Made for WordPress.
