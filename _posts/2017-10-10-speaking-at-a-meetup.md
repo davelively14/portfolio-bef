@@ -26,6 +26,6 @@ I learned two big lessons that day. First, always double check that you're prono
 
 So fast forward to October 2017. I had just completed [Flatfoot]({{site.baseurl}}/portfolio/1_flatfoot/), an app I built using a release candidate for the upcoming Phoenix 1.3. It was a significant departure from the MVC world of Phoenix 1.2 and I learned a lot about service-oriented design. I thought it would be an interesting topic of discussion for the Atlanta Elixir Meetup. Our organizer, Osa Gaius, agreed. I had a month to get my slides together.
 
+...To be continued...
 
-
-## Fruits of victory...
+<!-- ## Fruits of victory... -->
