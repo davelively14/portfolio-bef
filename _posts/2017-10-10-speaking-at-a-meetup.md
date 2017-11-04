@@ -15,8 +15,8 @@ tag: [Meetup, Public Speaking, Phoenix 1.3]
 
 ## Upon other fields...
 
-<img src="http://militaryhumor.net/wp-content/uploads/2015/11/military-humor-i-found-lt-barb-wire.jpg" align="right" width="50%">
 Back in January, 2005, I was a shiny new 2nd LT. I had spent the previous fall learning how to lead tank and scout platoons in the classroom and the field. All my training was focused on how to best maneuver my troops in combat operations. I was by no means an expert, but I at least knew the basics. By January I was in Baghdad with my new unit, but due to an over abundance of LTs no scout platoons were available yet. Instead, I was assigned as an assistant intelligence officer. Twelve hours into the job, my boss - the senior intelligence officer for the unit - tasked me to brief the nightly battle update brief.
+<img src="http://militaryhumor.net/wp-content/uploads/2015/11/military-humor-i-found-lt-barb-wire.jpg" align="right" width="50%">
 
 I'm not sure if the term imposter syndrome really applied in this case. After all, I really was an imposter. I was about to stand up and provide an intel brief for senior leaders of the squadron, all without having a real clue what I was about to do. The next 15 minutes was a bit of a blur, but the singular moment I'll always remember is when I pronounced HUMINT as "hum (like humming a line of music) int" and received a chorus of laughter. What I didn't learn in my 12 hours of prior training, was that HUMINT was an acronym for human intelligence (i.e. sources told us...). Apparently, to a bunch of senior Army officers, it was really funny to hear the butter bar talk about whole numbers quietly making music.
 
