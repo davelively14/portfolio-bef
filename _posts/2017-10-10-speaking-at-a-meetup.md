@@ -13,7 +13,7 @@ tag: [Meetup, Public Speaking, Phoenix 1.3]
 ![](https://secure.meetupstatic.com/s/img/68780390453345256452178/favicon.ico) &nbsp;&nbsp;<a href="https://www.meetup.com/atlantaelixir/" target="\_blank">Atlanta Elixir Meetup</a>
 
 
-## Upon other fields...
+## On other days...
 
 Back in January of 2005, I was a shiny new 2nd LT. Following graduation, I had spent the previous fall learning how to lead tank and scout platoons in the classroom and the field. All my training was focused on how to best maneuver my troops in combat operations. I was by no means an expert, but I at least knew the basics. By January I was in Baghdad with my new unit, but due to some unsurprisingly poor personnel management by Uncle Sam, my unit had an overabundance of LTs, so with no scout platoons were available the leadership found a different place for me. I was assigned as an assistant intelligence officer - a job I had neither trained for nor had much exposure to. Twelve hours into the job, my boss - the senior intelligence officer for the unit - tasked me to brief the intelligence portion of the nightly battle update brief.
 <img src="http://militaryhumor.net/wp-content/uploads/2015/11/military-humor-i-found-lt-barb-wire.jpg" align="right" width="50%">
@@ -22,7 +22,7 @@ I'm not sure if the term imposter syndrome really applied in this case. After al
 
 I learned two big lessons that day. First, always double check that you're pronouncing things the right way ([jason, jay-sawn, or J-S-O-N](https://www.youtube.com/watch?v=zhVdWQWKRqM&feature=youtu.be)?). Second, you'll survive public speaking gaffs. I went on to be ranked the top officer in the unit, be afforded the honor to command two troops, function as the senior US commander for an area roughly the size of Deleware along the Iraqi/Syrian border, and successfully briefed Generals, foreign heads of state, and CONDELs (pronounced Kahn Dells, for those tracking at home - Congressional Delegations).
 
-## On other days...
+## On other fields...
 
 So fast forward to October 2017. I had just completed [Flatfoot]({{site.baseurl}}/portfolio/1_flatfoot/), an app I built using a release candidate for the upcoming Phoenix 1.3. It was a significant departure from the MVC world of Phoenix 1.2 and I learned a lot about service-oriented design. I thought it would be an interesting topic of discussion for the Atlanta Elixir Meetup. Our organizer, Osa Gaius, agreed. I had a month to get my slides together.
 
@@ -37,4 +37,8 @@ I think I was more nervous preparing and practicing the presentation than when I
 2. I practiced giving it over and over. Some people record themselves or do it in front of friends and/or family. While those methods can help you improve your techniques, to overcome the imposter syndrome it's more important to have confidence in your knowledge of the material.
 3. I lowered the stakes in my head by reminding myself that no matter how bad I screwed up, I knew I could recover.
 
-Fortunately, this presentation was better received than my intel brief was back in 2005. Having given this presentation, I have a better mastery of the material I have studied over the past couple years. But perhaps even more importantly, I have full confidence than I can engage in technical conversations with mid-level to senior developers. 
+Fortunately, this presentation was better received than my intel brief was back in 2005. Having given this presentation, I have a better mastery of the material I have studied over the past couple years. But perhaps even more importantly, I have full confidence than I can engage in technical conversations with mid-level to senior developers.
+
+<hr>
+
+<small>Note on the sections headers: they come from a GEN Douglas McArthur speech about how sports are good military training: "On the fields of friendly strife are sown the seeds that on other days, on other fields will bear the fruits of victory."</small>
