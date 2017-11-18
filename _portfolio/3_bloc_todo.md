@@ -39,7 +39,8 @@ Will return the following JSON object:
 
 ## Tech Stack
 
-<a href="http://rubyonrails.org/" target="\_blank"><i class="icon-ruby-on-rails" style="font-size:4em;"></i></a> Rails is used for user management via static page frontend. It was also used as the API to handle received events from registered applications.
+<a href="http://rubyonrails.org/" target="\_blank"><i class="icon-ruby-on-rails" style="font-size:4em;"></i></a>
+Rails is used on the backend to serve the JSON API.
 <br>
 <br>
 <a href="https://www.postgresql.org/" target="\_blank"><i class="icon-postgres" style="font-size:4em;"></i></a> PostgreSQL for the database layer.
