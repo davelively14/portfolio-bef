@@ -30,7 +30,7 @@ More of a proof of concept than an exhaustive music library, this app mimics man
 
 ## Tech Stack
 
-<a href="https://angularjs.org/" target="\_blank"><i class="icon-angular" style="font-size:4em;"></i></a> AngularJS for our user interface.
+<a href="https://angularjs.org/" target="\_blank"><i class="icon-angular" style="font-size:4em;"></i></a> AngularJS for our user interface and data layer. Note that as a schoolhouse project, we do not persist any of the data, but it is maintained only until refresh.
 <br>
 <br>
 <a href="https://gruntjs.com/" target="\_blank"><i class="icon-grunt" style="font-size:4em;"></i></a> Grunt is our JS task runner.
