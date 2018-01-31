@@ -1,9 +1,7 @@
 logo: Home
 title: Dave Lively
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  The professional blog and portfolio of Dave Lively of SalesLoft.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.resurgens.io/" # the base hostname & protocol for your site, e.g. http://example.com
@@ -11,12 +9,12 @@ url: "http://www.resurgens.io/" # the base hostname & protocol for your site, e.
 # Banner settings
 video: Mobile-Games.mp4 # add banner video. Add your video file to the folder video
 banner-title: Dave Lively # add banner title
-banner-desc: Self-taught web developer with a solid base of formal CS ed, now specializing in Elixir w/ Phoenix, Rails, React, and AngularJS. # add banner description
+banner-desc: dave_lively |> Engineer.support() |> SalesLoft.join() # add banner description
 
 # Author settings
 author-pic: face.png # your photo
 author-name: Dave Lively
-about-author: Dave is a self-taught web developer based in Atlanta, seeking to turn his passion into a career. Graduate of West Point, husband to Sarah, and avid Atlanta United supporter.
+about-author: Dave is a Support Engineer at SalesLoft, husband to Sarah, graduate of West Point, and avid Atlanta United supporter.
 email: dlively@resurgens.io # your email
 phone: (704) 759-6241 # your phone number
 website: http://www.resurgens.io/ # you website
